@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scrollbar-width: none;
+  /* overflow: hidden; */
+  /* background-image: URL('/img/sky-bridge.png'); */
+  /* background-size: cover; */
+  /* background-color: rgb(0, 0, 0); */
+}
+/* Hide the scrollbar for Firefox */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+.box {
+  position: fixed;
+  width: 200px;
+  height: 150px;
+  /* background-image: url('/img/Idle__001.png'); */
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  bottom: 100px;
+  left: 30vw;
+  /* background-color: black; */
+  /* transform: scaleX(-1); */
+  
+}
+#background-container{
+  height: 100vh;
+  width: 500vw;
+  display: flex;
+  padding: 0;
+
+}
+#background-container img{
+  height: 100%;
+}
+.mirror{
+  transform: scaleX(-1);
+  background-position: right center;
+}
+.weapon{
+  height: 50px;
+  width: 50px;
+  /* background-color: red; */
+  background-image: URL('/img/weapon.png');
+  background-size: contain;
+  position: absolute;
+}
